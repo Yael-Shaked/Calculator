@@ -1,10 +1,9 @@
 import React from 'react';
 import Key from './Key';
 
-interface FunctionKeysProps {
-}
+interface FunctionKeysProps {}
 
-const FunctionKeys: React.FC<FunctionKeysProps> = ({  }) => {
+const FunctionKeys: React.FC<FunctionKeysProps> = ({}) => {
   const keys = ['F1', 'F2', 'F3', 'F4', 'F5', 'F6'];
 
   return (

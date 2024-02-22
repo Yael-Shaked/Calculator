@@ -31,9 +31,24 @@ const Calculator: React.FC = () => {
   useEffect(() => {
     const handleKeyBord = (event: KeyboardEvent) => {
       const key = event.key;
-      const validKeys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'Delete', 'Backspace', 'Enter'];
+      const validKeys = [
+        '0',
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '.',
+        'Delete',
+        'Backspace',
+        'Enter',
+      ];
       const keyMap: { [key: string]: string } = {
-        'Backspace': 'Delete', 
+        Backspace: 'Delete',
       };
 
       if (validKeys.includes(key) || Object.keys(keyMap).includes(key)) {
@@ -69,11 +84,11 @@ const Calculator: React.FC = () => {
         <div className=" relative mx-auto p-2 border-b-4 border-gray-200 w-full mb-10">
           <div className="flex c ">
             <div className="flex flex-col ">
-              <FunctionKeys  />
+              <FunctionKeys />
               <NumbersKeys onKeyPress={handleKeyPress} />
             </div>
             <div className="flex flex-col  ">
-              <SilverKeys  />
+              <SilverKeys />
               <SpecialFunctionKeys onKeyPress={handleKeyPress} />
             </div>
           </div>
