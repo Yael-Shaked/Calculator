@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+
+# Build output
+build/
+dist/
+public/
+.out/
+
+# Next.js specific
+.next/
+
+# Coverage directory
+coverage/
+
+# Minified files
+*.min.js
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+
+# Log files
+logs/
